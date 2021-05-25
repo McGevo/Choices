@@ -65,6 +65,7 @@ function subject_soft(){
 
   var subject = document.getElementById("subject").innerHTML;
   var alt = document.getElementById("alt").innerHTML;
+  //The alt refers to alternative courses the user could study
   var link;
 
   subject = "Certificate IV Program in Information Technology (Programming)";
@@ -89,6 +90,22 @@ function subject_web(){
   /*document.write('<a href="' + link + '">More Information</a>');*/
 }
 
+function double(){
+
+  window.location.href = "../html/reportpage.html";
+
+  var subject = document.getElementById("subject").innerHTML;
+  var alt = document.getElementById("alt").innerHTML;
+  //var link;
+
+  subject = "Double Diploma Program in Information Technology (Web-Based Technologies and Programming";
+  //link = "https://www.tafesa.edu.au/xml/course/aw/aw_CP00264.aspx?S=AWD&Y=2021";
+  //There is no link for this course online - maybe a string of text could say "More information coming soon!"
+  alt = "Certificate IV Program in Information Technology (Programming)";
+
+  /*document.write('<a href="' + link + '">More Information</a>');*/
+}
+
 function subject_network(){
 
   window.location.href = "../html/reportpage.html";
@@ -97,9 +114,9 @@ function subject_network(){
   var alt = document.getElementById("alt").innerHTML;
   var link;
 
-  subject = "Certificate IV Program in Information Technology (Web-Based Technologies)";
-  link = "https://www.tafesa.edu.au/xml/course/aw/aw_CP00264.aspx?S=AWD&Y=2021";
-  alt = "Certificate IV Program in Information Technology (Programming)";
+  subject = "Certificate IV Program in Information Technology (Networking)";
+  link = "https://www.tafesa.edu.au/xml/course/aw/aw_CP00262.aspx?S=AWD&Y=2021";
+  alt = "Certificate IV in Cyber Security";
 
   /*document.write('<a href="' + link + '">More Information</a>');*/
 }
@@ -112,9 +129,9 @@ function subject_cyber(){
   var alt = document.getElementById("alt").innerHTML;
   var link;
 
-  subject = "Certificate IV Program in Information Technology (Web-Based Technologies)";
-  link = "https://www.tafesa.edu.au/xml/course/aw/aw_CP00264.aspx?S=AWD&Y=2021";
-  alt = "Certificate IV Program in Information Technology (Programming)";
+  subject = "Certificate IV in Cyber Security";
+  link = "https://www.tafesa.edu.au/xml/course/aw/aw_AC00088.aspx?S=AWD&Y=2021";
+  alt = "Certificate IV Program in Information Technology (Networking)";
 
   /*document.write('<a href="' + link + '">More Information</a>');*/
 }
@@ -127,9 +144,9 @@ function subject_itcIII(){
   var alt = document.getElementById("alt").innerHTML;
   var link;
 
-  subject = "Certificate IV Program in Information Technology (Web-Based Technologies)";
-  link = "https://www.tafesa.edu.au/xml/course/aw/aw_CP00264.aspx?S=AWD&Y=2021";
-  alt = "Certificate IV Program in Information Technology (Programming)";
+  subject = "Certificate III Program in Information Technology";
+  link = "https://www.tafesa.edu.au/xml/course/aw/aw_TP01194.aspx?S=AWD&Y=2021";
+  alt = "Certificate IV Program in Information Technology";
 
   /*document.write('<a href="' + link + '">More Information</a>');*/
 }
@@ -142,9 +159,9 @@ function subject_itcIV(){
   var alt = document.getElementById("alt").innerHTML;
   var link;
 
-  subject = "Certificate IV Program in Information Technology (Web-Based Technologies)";
-  link = "https://www.tafesa.edu.au/xml/course/aw/aw_CP00264.aspx?S=AWD&Y=2021";
-  alt = "Certificate IV Program in Information Technology (Programming)";
+  subject = "Certificate IV Program in Information Technology";
+  link = "https://www.tafesa.edu.au/xml/course/aw/aw_TP01120.aspx?S=AWD&Y=2021";
+  alt = "Certificate III Program in Information Technology";
 
   /*document.write('<a href="' + link + '">More Information</a>');*/
 }
