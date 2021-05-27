@@ -29,6 +29,6 @@ function addpoints() {
 
 function departmentchoice(){
 
-  window.location.href = "../html/ithome.html";
+  window.location.href = "../html/itsurvey.html";
 
 }
