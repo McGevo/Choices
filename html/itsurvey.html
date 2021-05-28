@@ -19,26 +19,48 @@
 
     <div class="survey">
         <div class="question1">
-            <h4>Question1</h4>
-            <ul class="answer1">
-                <li>Answer 1</li>
-                <li>Answer 2</li>
-                <li>Answer 3</li>
-                <li>Answer 4</li>
+            <h4>Do you find more satisfaction in <strong>solving problems you found initially challenging </strong> or <strong>building new things you are passionate about</strong>?</h4>
+            <ul id="answer1">
+                <li id="1a">Building Things</li>
+                <li id="1b">Problem Solving</li>
             </ul>
         </div>
 
         <div class="question2">
-            <h4>Question2</h4>
+            <h4>Would you like to start your IT career with <strong>a wide range of skills across different areas of web-based technologies </strong> or <strong>focus on in-demand programming skills</strong>?</h4>
             <ul class="answer2">
-                <li>Answer A</li>
-                <li>Answer B</li>
-                <li>Answer C</li>
-                <li>Answer D</li>
+                <li onclick="return subject_web()">Web-based Technologies</li>
+                <li onclick="return subject_soft()">Programming Skills</li>
+                <li onclick="return double()">Study Both Web-based Technologies and Programming Skills (Double Diploma)</li>
+            </ul>
+        </div>
+
+        <div class="question3">
+            <h4>Would you like to start your IT career with <strong>a wide range of skills across different areas of IT</strong> or <strong>focus on working on essential skills businesses are looking for?</strong></h4>
+            <ul class="answer3">
+                <li id="2a">Focus on in-demand IT Skills</li>
+                <li id="2b">Wide IT Skills</li>
+            </ul>
+        </div>
+
+        <div class="question4">
+            <h4>Are you excited by the new opportunities surrounding Cyber Security?</strong></h4>
+            <ul class="answer4">
+                <li onclick="return subject_network()">No (Networking)</li>
+                <li onclick="return subject_cyber()">Yes (Cyber Security)</li>
+            </ul>
+        </div>
+
+        <div class="question5">
+            <h4>Do you want to study an <strong>introduction to IT</strong> or <strong>jump right into web-based technologies</strong>?</strong></h4>
+            <ul class="answer5">
+                <li onclick="return subject_itcIII()">IT Introduction</li>
+                <li onclick="return subject_itcIV()">Web-Based Technology</li>
             </ul>
         </div>
     </div>
 
     <script src=../js/home.js></script>
+    <script src=../js/main.js></script>
 </body>
 </html>
