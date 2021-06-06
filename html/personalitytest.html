@@ -4,7 +4,13 @@
     Notes: TAFESA Pathways Personality Test
      -- Example Prototype only, responses are prefilled and not adjustable
      -- Styling to occur later
--->
+
+ <!--
+    Author: William Crayford
+    Date Written: 06/06/2021
+    Notes: TAFESA Pathways IT Survey 
+     -- Styling created to make further comprehensive overview of the questionnaire
+-->	
 
 <!--
 
@@ -26,19 +32,35 @@ under the 1 study area.)
   <head>
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TAFESA Pathways Personality Test</title>
+  <title>TAFESA Pathways Personality Test</title>
   <meta name="author" content="ITWORKS - Lachlan Hunt">
+  <meta name="author" content="ITWORKS - William Crayford">
   <meta name="description" content="Personality Test Page for TAFESA Pathways Career Questionnaire">
   <meta name="keywords" content="TAFESA Pathways, Career Questionnaire, Personality Test">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  </head>
+  <link rel="stylesheet" href="../css/Questionnaire.css" type="text/css">
+</head>
+	
+<div class="containerper"> 
+  <!-- Navigation -->
+  <header class="header1">
+    <h4 class="logo">TafeSA Choices</h4>
+    <nav>
+      <ul>
+        <li><a href="#hero">HOME</a><a href="index.html"></a></li>
+        <li><a href="#about">ABOUT</a><a href="html/disclaimer.html"></a></li>
+        <li> <a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>	  
+	  
+ 
   <body>
 	<h2>Personality Test</h2>
 
   <h3>***This section is a prototype. Options are limited.***</h3>
 
   <p>Let's start by finding out more about you. Please select the activities below which most interest you (ONE per section).</p>
-  <form action="../php/department_direct.php" autocomplete="off">
+  <form action="../../php/department_direct.php" autocomplete="off">
 
   <legend>Please select 1 option in each of the following sections :</legend>
 
@@ -118,14 +140,18 @@ under the 1 study area.)
 
 
   </form>
+</body>
 
-  <br/>
-
-  <button type="submit" onclick="return addpoints()">Next</button>
 	<!--<a href="">Next</a><br/><br/>-->
-	<a href="disclaimer.html">Back</a> <br/><br/>
-  <a href="../index.html">Home</a> <br/><br/>
-  <script src="../js/jquery-3.6.0.js" type="text/javascript"></script>
-  <script src="../js/main.js" type="text/javascript"></script>
-  </body>
-</html>
+	<div class="container1">
+		<a href="department_choice.html" class="button2">Submit</a></div>
+	  <br/>
+	<div class="container2">
+<a href="disclaimer.html" class="button2">Back</a></div>
+		 <br/>
+		<div class="container3">
+		<a href="../index.html" class="button2">Home</a></div>
+	  <br/>
+  <script src="../../js/jquery-3.6.0.js" type="text/javascript"></script>
+  <script src="../../js/main.js" type="text/javascript"></script>
+</div></html>	

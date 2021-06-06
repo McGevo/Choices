@@ -17,28 +17,30 @@ Once the user clicks "submit", Javascript is executed to calculate the winning c
 and take the user to that department's home page. OUR CODE ONLY FEATURES AN IT DEPARTMENT
 HOME PAGE SO THE USER CAN ONLY LAND ON THE IT HOMEPAGE WHEN THEY HIT SUBMIT.
 
-Recommendations for what information could be placed into the database are below.
+Recommendations for what information could be placed into the database are below. -->
 
--->
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TAFESA Pathways Personality Test Part 2</title>
-  <meta name="author" content="ITWORKS - Lachlan Hunt">
-  <meta name="description" content="Personality Test Page for TAFESA Pathways Career Questionnaire">
-  <meta name="keywords" content="TAFESA Pathways, Career Questionnaire, Personality Test">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  </head>
-  <body>
-	<h2>Personality Test</h2><h3>Pt. II</h3>
-
-  <h3>***This section is a prototype. Options are limited.***</h3>
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>TAFESA Choices Questionnaire</title>
+<link href="../css/Questionnaire.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="containerdep"> 
+<header> 
+    <h4 class="logo">TafeSA Choices</h4>
+    <nav>
+      <ul>
+        <li><a href="#hero">HOME</a><a href="index.html"></a></li>
+        <li><a href="#about">ABOUT</a><a href="html/disclaimer.html"></a></li>
+        <li> <a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+</header> <h2>Personality Test</h2><h3>***.Pt. II Options are limited.***</h3>
 
   <p>We're almost there... Please select the activities below which most interest you (ONE per section).</p>
-  <form action="../php/department_direct.php" autocomplete="off">
+  <form action="../../php/department_direct.php" autocomplete="off">
 
   <legend>Please select 1 of the following options :</legend>
 
@@ -66,11 +68,16 @@ Recommendations for what information could be placed into the database are below
 
   <br/>
 
-  <button type="submit" onclick="return departmentchoice()">Next</button>
-	<!--<a href="">Next</a><br/><br/>-->
-	<a href="personalitytest.html">Back</a> <br/><br/>
-  <a href="../index.html">Home</a> <br/><br/>
+  <div class="container1">
+		<a href="itsurvey.html" class="button2">Submit</a></div>
+	  <br/>
+	<div class="container2">
+<a href="disclaimer.html" class="button2">Back</a></div>
+		 <br/>
+		<div class="container3">
+		<a href="../index.html" class="button2">Home</a></div>
+	  <br/>
   <script src="../js/jquery-3.6.0.js" type="text/javascript"></script>
   <script src="../js/main.js" type="text/javascript"></script>
-  </body>
+	</div></body>
 </html>
