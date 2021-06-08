@@ -1,9 +1,22 @@
+<!doctype html>
 <html lang="en">
 <!--
     Author: Steven Frankling
     Date Written: 17/05/2021
     Notes: TAFESA Choices Project
 -->
+	
+<!--
+    Author: William Crayford
+    Date Written: 06/06/2021
+    Notes: TAFESA Pathways IT Survey 
+    Styling created to make further comprehensive overview of the questionnaire
+	 
+	 Update : Lachlan Hunt - 8/6/21
+	Note: Elements added and styled to present PHP to user and ensure links are appropriate.
+-->	
+	
+	
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,33 +25,61 @@
     <title>TAFESA Pathways</title>
 </head>
 <body>
-    
-    <header>
-        <h1>TAFESA Choices</h1>
-    </header>
+	<div class="containerit"> 
+     <header class="headerit" > <a href="https://www.tafesa.edu.au">
+    <h4 class="logo">TafeSA Choices</h4>
+    </a>
+    <nav>
+      <ul>
+		<li><a href="../index.html">HOME</a></li>
+        <li><a href="disclaimer.html">ABOUT</a></li>
+        <li> <a href="https://www.tafesa.edu.au/about-tafesa/contact-us">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <div class="survey">
         <div class="question1">
-            <h4>Question1</h4>
-            <ul class="answer1">
-                <li>Answer 1</li>
-                <li>Answer 2</li>
-                <li>Answer 3</li>
-                <li>Answer 4</li>
+            <h4>Do you find more satisfaction in <strong>setting up clients with strong IT infasctructure</strong> or <strong>building new things you are passionate about</strong>?</h4>
+            <ul id="answer1">
+                <li class="surveystyle" id="1a">Building Things</li>
+                <li class="surveystyle" id="1b">IT Infasctructure</li>
+            </ul>
+        </div>
+        <div class="question2">
+            <h4>Would you like to start your IT career with <strong>a wide range of skills across different areas of web-based technologies</strong> or <strong>focus on in-demand programming skills</strong>?</h4>
+            <ul class="answer2">
+                <li><form action="../php/reportpage.php" method="POST"><input name="subject" type="hidden" id="5" value="5"><input name="submit" type="submit" id="submit5" value="Web-based Technologies"></form></li>
+                <li><form action="../php/reportpage.php" method="POST"><input name="subject" type="hidden" id="6" value="6"><input name="submit" type="submit" id="submit6" value="Programming Skills"></form></li>
             </ul>
         </div>
 
-        <div class="question2">
-            <h4>Question2</h4>
-            <ul class="answer2">
-                <li>Answer A</li>
-                <li>Answer B</li>
-                <li>Answer C</li>
-                <li>Answer D</li>
+        <div class="question3">
+            <h4>Would you like to start your IT career with <strong>a wide range of skills across different areas of IT</strong> or <strong>focus on skills related specifically to networking?</strong></h4>
+            <ul class="answer3">
+                <li class="surveystyle" id="2a">Networking</li>
+                <li class="surveystyle" id="2b">Wide Range of IT Skills</li>
+            </ul>
+        </div>
+
+        <div class="question4">
+            <h4><strong>Are you excited by the new opportunities surrounding Cyber Security?</strong></h4>
+            <ul class="answer4">
+                <li><form action="../php/reportpage.php" method="POST"><input name="subject" type="hidden" id="2" value="2"><input name="submit" type="submit" id="submit2" value="(NO) Networking"></form></li>
+                <li><form action="../php/reportpage.php" method="POST"><input name="subject" type="hidden" id="1" value="1"><input name="submit" type="submit" id="submit1" value="(YES) Cyber Security"></form></li>
+            </ul>
+        </div>
+
+        <div class="question5">
+            <h4>Do you want to study an <strong>introduction to IT</strong> or <strong>jump right into web-based technologies</strong>?</h4>
+            <ul class="answer5">
+                <li><form action="../php/reportpage.php" method="POST"><input name="subject" type="hidden" id="3" value="3"><input name="submit" type="submit" id="submit3" value="IT Introduction"></form></li>
+                <li><form action="../php/reportpage.php" method="POST"><input name="subject" type="hidden" id="4" value="4"><input name="submit" type="submit" id="submit4" value="Web-Based Technology"></form></li>
             </ul>
         </div>
     </div>
-
-    <script src=../js/home.js></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/main.js"></script>
+	</div>
 </body>
 </html>

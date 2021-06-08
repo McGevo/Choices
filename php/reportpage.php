@@ -3,9 +3,6 @@
     Date Written: 18/05/2021
     Notes: TAFESA Pathways Report Page
     Styling to occur later
-	 
-	Update : Lachlan Hunt - 8/6/21
-	Note: Elements added and styled to present PHP to user and ensure links are appropriate.
 -->
 
 <!--
@@ -39,9 +36,9 @@ It must also include
     </a>
     <nav>
       <ul>
-		<li><a href="#hero">HOME</a><a href="index.html"></a></li>
-        <li><a href="#about">ABOUT</a><a href="html/disclaimer.html"></a></li>
-        <li> <a href="#contact">CONTACT</a></li>
+		<li><a href="../index.html">HOME</a></li>
+        <li><a href="../html/disclaimer.html">ABOUT</a></li>
+        <li> <a href="https://www.tafesa.edu.au/about-tafesa/contact-us">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -64,20 +61,21 @@ It must also include
   {
     //Using the while loop populate all product in a table
     $subject_title = $row['subjectTitle'];
-	  $subject_desc = $row['subjectDescription'];
+	$subject_desc = $row['subjectDescription'];
     $subject_info = $row['infoURL'];
     
-    echo "<h3>Your recommended Course Enrolment is $subject_title</h3>"; //Name field from the SQL table is missing
-    echo "<br><br>";
+	echo "<div class='grey'>";
+    echo "<h3>Your recommended Course Enrolment is : <br>";
+	echo "<strong class='underline'>$subject_title</strong></h3>"; //Name field from the SQL table is missing
     echo "<p>Subject Description : $subject_desc</p>";
-    echo "<p>You can find out more about this subject by following this link : <a href='$subject_info'>More Infomation</a></p>";
-    echo "<p>Ready to Enrol in this course? <a href='https://www.tafesa.edu.au/apply-enrol/how-to-apply/award-satac-entry'>Click here</a></p>";
+    echo "<p>You can find out more about this subject by following this link : <a class='link' href='$subject_info'>More Infomation</a></p>";
+    echo "<p>Ready to Enrol in this course? <a class='link' href='https://www.tafesa.edu.au/apply-enrol/how-to-apply/award-satac-entry'>Click here</a></p>";
     echo "<p>Alternatively, if you would like to contact the course coordinator for this course, you can send them a message by following the link below.</p><br/>";
-    echo "<a href='contact.php'>Contact TAFESA Coordinator</a>";
-
+    echo "<div class='container2'>";
+	echo "<p><form action='contact.php' method='POST'><input name='subject' type='hidden' id=$subject value=$subject><input class='button' name='submit' type='submit' id='submitcoordinator' value='Contact this subject&#39;s TAFESA Coordinator'></form></p>";
+	echo "</div>";
   }
-
-  echo "<br><br>";
+  
   $query = "SELECT subjectTitle, subjectDescription, infoURL FROM subjects WHERE studyArea IN (SELECT studyArea FROM subjects WHERE subjectCode = $subject) AND NOT subjectCode = $subject";
   $result = mysqli_query($link, $query);
   
@@ -91,22 +89,22 @@ It must also include
 	$subject_desc = $row['subjectDescription'];
     $subject_info = $row['infoURL'];
     
-    echo "<h4>Course : $subject_title</h4>";
+    echo "<h4>Course : <strong class='underline'>$subject_title</strong></h4>";
     echo "<p>Subject Description : $subject_desc</p>";
-    echo "<p>You can find out more about this subject by following this link : <a href='$subject_info'>More Infomation</a></p>";
-
+    echo "<p>You can find out more about this subject by following this link : <a class='link' href='$subject_info'>More Infomation</a></p>";
+	echo "</div>";
   }
 
   mysqli_close($link);
 ?> 
 	
   <br/>
-
+	<p>Not sure these results are for you? Click "Retake Questionnaire" below to see if you get a different recommendation.</p>
   <br/>
 
 	<!--<a href="">Next</a><br/><br/>-->
 	<div class="container1">
-	<a href="itsurvey.html" class="button">back</a></div>
+	<a href="../html/disclaimer.html" class="button">Retake Questionnaire</a></div>
 	  <br/>
 	<div class="container2">
 <a href="../index.html" class="button2">Home</a></div>  

@@ -2,9 +2,19 @@
     Author: Lachlan Hunt
     Date Written: 18/05/2021
     Notes: TAFESA Pathways Disclaimer Page
-     -- Example Prototype only, responses are prefilled and not adjustable
-     -- Styling to occur later
+    Example Prototype only, responses are prefilled and not adjustable
+    Styling to occur later
 -->
+
+<!--
+    Author: William Crayford
+    Date Written: 06/06/2021
+    Notes: TAFESA Pathways IT Survey 
+    Styling created to make further comprehensive overview of the questionnaire
+	 
+	 Update : Lachlan Hunt - 8/6/21
+	Note: Elements added and styled to present PHP to user and ensure links are appropriate.
+-->	
 
 <!--
 
@@ -14,18 +24,32 @@ No information on this pages needs to be put into the database.
 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>TAFESA Pathways Disclaimer Page</title>
+  <title>TAFESA Pathways Disclaimer Page</title>
   <meta name="author" content="ITWORKS - Lachlan Hunt">
   <meta name="description" content="disclaimer for TAFESA Pathways Career Questionnaire">
   <meta name="keywords" content="TAFESA Pathways, Career Questionnaire, TAFESA">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="../css/Questionnaire.css" type="text/css">
   </head>
-  <body>
-    <h2>How this Questionnaire Works</h2>
+<body>
+<!-- Main Container -->
+<div class="containerdis"> 
+  <!-- Navigation -->
+  <header>
+    <h4 class="logo">TafeSA Choices </h4>
+    <nav>
+      <ul>
+       <li><a href="../index.html">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li> <a href="https://www.tafesa.edu.au/about-tafesa/contact-us">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+<h2>How this Questionnaire Works</h2>
     <p>This Questionnaire comprises of 3 Parts :</p>
     <ol>
       <li>A Personality Test</li>
@@ -33,18 +57,19 @@ No information on this pages needs to be put into the database.
       <li>A Report generator</li>
     </ol>
 
-    <p>The Personality Test is used to understand your interests, career potential in a particular field and then point you towards your most suited course to enroll in. It will as you to check off activities which interest you and you believe are improtant in everyday life. From here, a score will help determine what field of study could be right for you.</p>
+<p>The Personality Test is used to understand your interests and career potential in a particular field and then point you towards your most suited course to enroll in. It will ask you to check off activities which interest you and you believe are improtant in everyday life. From here, a score will help determine what field of study could be right for you.</p>
 
-    <p>Enrolling in a subject from a borad field can be overwhelming for many students. How do you know you've made the best choice for your future? This is where the Course Enrolment Quiz comes in. The Course Enrolment Quiz is used to filter through all your study options from any TAFE department and suggest 1 specific course for yout to study along with a handful of suitable alternatives.</p>
+<p>Enrolling in a subject from a broad field can be overwhelming for many students. How do you know you've made the best choice for your future? This is where the Course Enrolment Quiz comes in. The Course Enrolment Quiz is used to filter through all your study options from any TAFE department and suggest one specific course for you to study, along with a handful of suitable alternatives.</p>
 
-    <p>At the end of this questionnaire, a report will be presented to you documenting the questionnaire's findings. You can download this report or retake the questionnaire to see how the choices you make can change your course recommendation. You will be presented with the option to contact a course lecturer in the area of study you've been recommended.</p>
+<p>At the end of this questionnaire, a report will be presented to you documenting the questionnaire's findings. You can download this report or retake the questionnaire to see how the choices you make can change your course recommendation. You will be presented with the option to contact a course lecturer in the area of study you've been recommended.</p>
 
-	  <p>Disclaimer : The information provided in this online questionnaire is only meant to be used as a guide. Choices reguarding your career and studies should be made in consultation with professionals offering career advice and services. TAFE SA, ITWORKS and TAFESA_Choices do not accept any liabaility for accuracy or suitability of information provided. Every reasonable effort has been made by the development team to ensure information provided is relevant, up-to-date, and accurate with reasonable grounds to make suggestions to the user based on responses given. By proceeding with this questionnaire, you agree to these terms.
+<p>Disclaimer : The information provided in this online questionnaire is only meant to be used as a guide. Choices regarding your career and studies should be made in consultation with professionals offering career advice and services. TAFE SA, ITWORKS and TAFESA_Choices do not accept any liabaility for accuracy or suitability of information provided. Every reasonable effort has been made by the development team to ensure information provided is relevant, up-to-date, and accurate with reasonable grounds to make suggestions to the user based on responses given. By proceeding with this questionnaire, you agree to these terms.</p>
 
-	Terms of Use: User agrees not to modify, copy, or destroy and files or material associated with this service and the website architecture supporting it. User understands and consents to any information being provided or gathered by this service or software supporting this service being used to promote and improve the quality of the user experience. By proceeding with this questionnaire, you agree to these terms.</p>
-	<a href="personalitytest.html">Start Questionnaire</a><br/><br/>
-	<a href="../index.html">Back</a> <br/><br/>
-	<a href="../index.html"></a>
-  <script src="../js/jquery-3.6.0.js" type="text/javascript"></script>
-  </body>
-</html>
+<p>Terms of Use: User agrees not to modify, copy, or destroy any files or material associated with this service and the website architecture supporting it. User understands and consents to any information being provided or gathered by this service or software supporting this service being used to promote and improve the quality of the user experience. By proceeding with this questionnaire, you agree to these terms.</p>
+	  
+<div class="container1">
+	<a href="personalitytest.html" class="button">Next</a></div>
+	  <br/>
+	<div class="container2">
+<a href="../index.html" class="button2">Back</a></div>  
+</div></body></html>
